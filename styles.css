@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background for readability */
+}
+ 
+/* Title Styles */
+h1 {
+    color: rgb(224, 72, 235);
+    animation: fadeIn 2s ease-in-out; /* Adding a fade-in animation */
+}
+
+h1, h2, h3, p {
+    text-align: center; /* Centers the elements horizontally */
+}
+
+/* Centered Images */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+img {
+    position: relative; /* or absolute, depending on your layout */
+    left: 160px; /* Moves the element 30px to the right */
+    max-width: 70%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: rgb(224, 72, 235);
+}
+
+/* Responsive Design for Navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stacks navigation links vertically */
+        gap: 10px;
+    }
+}
+
+/* Image Styles */
+img {
+    border: 2px solid #ddd; /* Adds a border around images */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* Enlarges image slightly on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: rgb(224, 72, 235);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
